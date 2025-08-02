@@ -1,0 +1,135 @@
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+
+.my-bg{
+    background-color:#034f4a ;
+}
+
+.my-btn{
+    padding: 15px;
+}
+
+img{
+    height: 200px;
+}
+.nav-item{
+    position: relative;
+    
+}
+
+.nav-item::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: #d8b711;
+    left: 10px;
+    bottom:0;
+    transition: width  0.3s;
+}
+.nav-item:hover::after{
+    width: 100%;
+    transition: width  0.3s;
+}
+
+.my-font{
+    font-family: "Playwrite PL", cursive;
+}
+
+.my-bgc{
+    background-image: url('../assets/colorscheme-2307270nvrkm.webp'); /* Check that '../assets/1.jpg' is correct relative to this CSS file */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.layer{ 
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.centerText{
+    position: absolute;
+    top: 35%;
+}
+.w-s{
+    word-spacing: 20px;
+}
+
+.card{
+    /* max-height: 300px; */
+    overflow: hidden;
+    border-radius: 15px !important;
+
+}
+
+.card img{
+    transform: scaleX(1);
+    transition: transform 0.7s ease-in-out;
+
+}
+.card:hover img {
+    transform: scaleX(1.2);
+    width: 200%;
+    transition: transform 0.7s ease-in-out;
+}
+.rounded img{
+    border-radius: 15px !important;
+}
+
+
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 5px solid #f1870d;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+    .loading{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333b9;
+        width: 100%;
+        height: 100%;
+    }
+
+    a{
+        /* color: white !important; */
+        text-decoration: none;
+    }
+
+
+
+
